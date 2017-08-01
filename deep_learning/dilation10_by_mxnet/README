@@ -1,0 +1,3 @@
+Course project of deep learning course in ShanghaiTech University, reimplementation of paper "Multi-Scale Context Aggregation by Dilated Convolutions". The code and training is finished, but I didn't get the performance in original paper.
+
+the code is based on the FCN MXNET implementation in https://github.com/apache/incubator-mxnet/tree/master/example/fcn-xs and CAFFE implementation of original paper in https://github.com/fyu/dilation
