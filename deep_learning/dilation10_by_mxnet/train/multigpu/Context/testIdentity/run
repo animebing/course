@@ -1,0 +1,13 @@
+#!/bin/bash
+
+python testIdentity.py \
+--params frontend \
+--params_epoch 98 \
+--mean 72.39 82.91 73.16 \
+--data_dir /home/bingbing/Documents/datasets/cityscapesDataset \
+--test_list val.lst \
+--test_batch 6 \
+--classes 19 \
+--std 0.0000001 \
+--up \
+--gpus 2

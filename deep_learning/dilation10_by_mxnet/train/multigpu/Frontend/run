@@ -1,0 +1,3 @@
+#!/bin/bash
+
+python train.py --model frontend --params VGG_FC_ILSVRC_16_layers --params_epoch 74 --mean 72.39 82.91 73.16 --work_dir model_all  --log_file frontend.log --data_dir /home/bingbing/Documents/datasets/cityscapesDataset --train_list train.lst --test_list val.lst --train_batch 24  --test_batch 24 --epoches 100 --lr 0.0001 --lr_factor 0.5 --lr_factor_epoch 20 --momentum 0.99 --wd 0.0005 --classes 19 --up --gpu 0,1,2,3

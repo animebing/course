@@ -1,0 +1,21 @@
+#!/bin/bash
+
+python ../../train.py \
+--model context \
+--mean 72.39 82.91 73.16 \
+--work_dir . \
+--log_file context.log \
+--data_dir /home/bingbing/Documents/datasets/cityscapesDataset \
+--train \
+--test \
+--batch_size 24 \
+--batch_interval 5 \
+--epoches 100 \
+--lr 0.001 \
+--lr_factor 0.5 \
+--lr_factor_epoch 20 \
+--momentum 0.99 \
+--wd 0.0005 \
+--classes 19 \
+--std 0.0 \
+--gpus 0,1,2,3

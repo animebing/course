@@ -1,0 +1,23 @@
+#!/bin/bash
+
+python ../../train.py \
+--model joint \
+--params ../../frontend ../../context \
+--params_epoch 98 100 \
+--mean 72.39 82.91 73.16 \
+--work_dir . \
+--log_file joint.log \
+--data_dir /home/bingbing/Documents/datasets/cityscapesDataset \
+--train_list train.lst \
+--test_list val.lst \
+--train_batch 4 \
+--test_batch 4 \
+--batch_interval 50 \
+--epoches 1 \
+--lr 0.0001 \
+--lr_factor 0.5 \
+--lr_factor_epoch 20 \
+--momentum 0.99 \
+--wd 0.0005 \
+--classes 19 \
+--gpus 0,1,2,3
